@@ -1,0 +1,8 @@
+{
+  "name": "event-examples",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JHSeo-git/event-examples.git",
+  "author": "JHSeo <qnfqnfqnf@gmail.com>",
+  "license": "MIT"
+}
