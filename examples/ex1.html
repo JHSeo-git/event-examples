@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Examples</title>
+    <style>
+      div {
+        padding: 20px;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">
+      첫번째 이벤트
+      <div id="d2">
+        두번째 이벤트
+        <div id="d3">세번째 이벤트</div>
+      </div>
+    </div>
+    <script>
+      const getDomById = (id) => document.getElementById(id);
+      const d1 = getDomById('d1');
+      const d2 = getDomById('d2');
+      const d3 = getDomById('d3');
+      d1.addEventListener('click', (e) => console.log('d1 called', e.target.id));
+      d2.addEventListener('click', (e) => console.log('d2 called', e.target.id));
+      d3.addEventListener('click', (e) => console.log('d3 called', e.target.id));
+    </script>
+  </body>
+</html>
